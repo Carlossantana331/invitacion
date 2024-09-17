@@ -224,7 +224,7 @@ h1{
     }
 }
 
-@media (min-height: 600px){
+@media (min-height: 400px){
     .content{
         margin-top: 350px;
     }
