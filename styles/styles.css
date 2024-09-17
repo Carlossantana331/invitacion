@@ -223,7 +223,15 @@ h1{
     .botones{
         padding: 10px 0px;
     }
+}
 
+@media (max-height: 900px){
+    .anillos{
+        margin-top: 400px;
+    }
+    .flor1{
+        bottom: -600px;
+    }
 }
 
 
