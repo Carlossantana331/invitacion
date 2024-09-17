@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Invitación</title>
+  </head>
+
+
+  <body class="content">
+    <div id="content">
+
+      <div class="anillos">
+        <img src="src/anillos (2).png" alt="">
+      </div>
+
+      
+      <section >
+        <p class="nombres">Danae & Carlos</p>
+      </section>
+      <h1>NOS CASAMOS!!</h1>
+
+      <section class="info">
+        <p class="day">Sábado</p>
+        <section class="date">
+          <p class="numeroDia">23</p>
+          <p>Noviembre</p>
+        </section>
+        <p class="time">18:00Hr</p>
+      </section>
+
+      <section class="textos">
+        <p class="poema">
+          <em>"El amor no es mirar el uno al otro, sino mirar juntos en la misma dirección."</em> — Antoine de Saint-Exupéry
+        </p>
+
+        <p class="texto"> 
+          Con mucha ilusión y amor, queremos que sean parte del día en que
+          nuestras miradas se unan para siempre.
+        </p>
+      </section>
+
+      <p class="vestimenta">Código de vestimenta: Formal casual</p>      
+
+      <section class="botones">
+        <a href="https://maps.app.goo.gl/qdzbQRbniNXhodmv7" target="_blank" class="link">
+          <span class="otraCosa"><img src="src/marcador-de-posicion.png" alt="marcador de posicion" class ="linkBoton"></span>
+          <span class="cosa"> Ubicación</span>
+        </a>
+
+        <a href="https://wa.me/523331423378?text=Hola" target="_blank" class="link">
+          <span class="otraCosa"><img src="src/whatsapp.png" alt="whatsapp" class ="linkBoton"></span>
+          <span class="cosa"> Confirmación<br> aquí</span>
+          
+        </a>
+      </section>
+
+
+      <button id="download" class="botonDescarga">Descargar PDF</button>
+
+  
+
+
+      <img src="src/flor1.png" alt="" class="flor1">
+      <img src="src/flor1.png" alt="" class="flor1 flor1Reverse">
+
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+    <script>
+      document
+        .getElementById("download")
+        .addEventListener("click", function () {
+          var element = document.getElementById("content");
+          html2pdf().from(element).save();
+        });
+    </script>
+  </body>
+  
+
+  
+  
